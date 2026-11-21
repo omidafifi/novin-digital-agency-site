@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="معرفی اعضای تیم آژانس دیجیتال مارکتینگ نوین؛ رضا محمدیان‌فرد و امید رضا عفیفی.">
+  <meta name="theme-color" content="#2437E8">
+  <title>اعضای تیم | آژانس دیجیتال مارکتینگ نوین</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600;800;900&family=Vazirmatn:wght@300;400;500;600;700&display=swap">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #F3F5FC;
+      --fg: #0A0F33;
+      --muted: #4A5180;
+      --surface: #FFFFFF;
+      --surface-2: #E6EAFA;
+      --line: #D3D9F2;
+      --hero-bg: #2437E8;
+      --brand: #2437E8;
+      --saffron: #FFB020;
+      --turq: #17C3B2;
+      --band: #0A0F33;
+      --on-band: #EEF1FF;
+      --focus: #2437E8;
+      --font-display: "Noto Kufi Arabic", "Vazirmatn", Tahoma, sans-serif;
+      --font-body: "Vazirmatn", Tahoma, "Segoe UI", system-ui, sans-serif;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.95 var(--font-body);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #070B25;
+        --fg: #EEF1FF;
+        --muted: #A3AAD6;
+        --surface: #10164A;
+        --surface-2: #1A2270;
+        --line: #262F7C;
+        --hero-bg: #1C2CD4;
+        --brand: #8C99FF;
+        --band: #04061A;
+        --on-band: #EEF1FF;
+        --focus: #FFB020;
+      }
+    }
+    *, *::before, *::after { box-sizing: inherit; }
+    body { margin: 0; background: var(--bg); color: var(--fg); -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, p, ul { margin: 0; padding: 0; }
+    ul { list-style: none; }
+    a { color: inherit; text-decoration: none; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 8px; }
+    .wrap { width: 100%; max-width: 1220px; margin-inline: auto; padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px)); }
+    .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; font-variant-numeric: tabular-nums; }
+    .top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; background: var(--hero-bg); color: #fff; border-bottom: 1px solid rgba(255,255,255,.16); }
+    .bar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .brand-text small { font-size: .7rem; opacity: .8; font-weight: 500; }
+    .brand-text b { font: 900 1.6rem/1.1 var(--font-display); }
+    .nav { display: none; }
+    .nav.open { display: flex; flex-direction: column; gap: 2px; position: absolute; inset-inline: 0; top: 100%; background: var(--hero-bg); border-bottom: 1px solid rgba(255,255,255,.16); padding: 10px max(16px, env(safe-area-inset-right, 0px)) 18px max(16px, env(safe-area-inset-left, 0px)); }
+    .nav a { display: block; padding: 10px 8px; font-weight: 500; opacity: .88; }
+    .nav a:hover, .nav a[aria-current="page"] { opacity: 1; }
+    .nav a[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--saffron); }
+    .bar-end { display: flex; align-items: center; gap: 10px; }
+    .bar-end .btn { display: none; }
+    .menu-btn { width: 44px; height: 44px; display: grid; place-items: center; border: 1.5px solid rgba(255,255,255,.5); border-radius: 50%; background: transparent; color: #fff; cursor: pointer; }
+    .btn { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 8px; padding: 8px 22px; border: 2px solid transparent; border-radius: 999px; cursor: pointer; font: 700 .95rem/1.5 var(--font-body); transition: transform .18s ease, background-color .18s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-saf { background: var(--saffron); color: #0A0F33; }
+    .btn-lapis { background: var(--hero-bg); color: #fff; }
+    .btn-lite { border-color: rgba(255,255,255,.65); color: #fff; }
+    .btn-lite:hover { background: rgba(255,255,255,.12); }
+    @media (min-width: 640px) { .bar-end .btn { display: inline-flex; } }
+    @media (min-width: 1100px) {
+      .nav, .nav.open { display: flex; flex-direction: row; gap: 10px; position: static; border: 0; padding: 0; background: none; }
+      .menu-btn { display: none; }
+    }
+    .hero { position: relative; isolation: isolate; overflow: clip; padding-block: clamp(52px, 8vw, 88px); background: var(--hero-bg); color: #fff; }
+    .hero::before, .hero::after { position: absolute; z-index: -1; content: ""; pointer-events: none; }
+    .hero::before { width: clamp(280px, 42vw, 560px); aspect-ratio: 1; inset-inline-start: -16%; top: -64%; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; box-shadow: 0 0 0 40px rgba(255,255,255,.035), 0 0 0 82px rgba(255,255,255,.03); }
+    .hero::after { width: 230px; height: 230px; inset-inline-end: 8%; bottom: -205px; border: 1px solid rgba(255,255,255,.2); transform: rotate(45deg); box-shadow: 0 0 0 28px rgba(255,255,255,.05), 0 0 0 56px rgba(255,255,255,.035); }
+    .crumbs { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; font-size: .9rem; opacity: .82; }
+    .crumbs a:hover { text-decoration: underline; }
+    .eyebrow { display: inline-block; padding: 3px 14px; border: 1px solid rgba(255,255,255,.45); border-radius: 999px; font-size: .9rem; }
+    h1 { margin-top: 16px; font: 900 clamp(2.2rem, 6vw, 4.5rem)/1.45 var(--font-display); text-wrap: balance; }
+    .hero-lead { max-width: 740px; margin-top: 12px; color: rgba(255,255,255,.88); font-size: clamp(1.02rem, 2vw, 1.18rem); }
+    .section { padding-block: clamp(52px, 8vw, 92px); }
+    .profile-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(28px, 6vw, 72px); }
+    .profile-grid + .profile-grid { margin-top: clamp(52px, 8vw, 88px); padding-top: clamp(52px, 8vw, 88px); border-top: 1px solid var(--line); }
+    .portrait-card { position: relative; overflow: hidden; max-width: 480px; margin: 0 auto; border: 1px solid var(--line); border-radius: 30px; background: var(--surface); box-shadow: 0 18px 48px rgba(10,15,51,.12); }
+    .portrait-card img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+    .portrait-card-vertical img { aspect-ratio: 2 / 3; object-position: center top; }
+    .portrait-caption { padding: 18px 22px 22px; }
+    .portrait-caption strong { display: block; font: 800 1.15rem/1.7 var(--font-display); }
+    .portrait-caption span { color: var(--muted); }
+    .section-kicker { display: block; margin-bottom: 8px; color: var(--brand); font-weight: 700; }
+    h2 { font: 800 clamp(1.6rem, 3.6vw, 2.45rem)/1.55 var(--font-display); text-wrap: balance; }
+    .profile-intro { margin-top: 12px; color: var(--muted); }
+    .credentials { display: grid; gap: 12px; margin-top: 26px; }
+    .credential { display: grid; grid-template-columns: 105px 1fr; gap: 12px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+    .credential span { color: var(--muted); }
+    .credential strong { font-weight: 700; }
+    .contact-section { padding-block: clamp(42px, 7vw, 70px); background: var(--saffron); color: #0A0F33; }
+    .contact-grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px; }
+    .contact-grid p { margin-top: 6px; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .contact-section .btn-lapis { background: #0A0F33; }
+    .contact-section .btn-lite { border-color: #0A0F33; color: #0A0F33; }
+    footer { padding-block: 28px; background: var(--band); color: var(--on-band); }
+    .foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    .foot-links a { opacity: .8; }
+    .foot-links a:hover { opacity: 1; text-decoration: underline; }
+    @media (max-width: 760px) {
+      .profile-grid { grid-template-columns: 1fr; }
+      .portrait-card { width: min(100%, 440px); }
+      .contact-grid { align-items: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      :root { scroll-behavior: auto; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="آژانس دیجیتال مارکتینگ نوین، صفحه اصلی">
+      <svg width="34" height="40" viewBox="0 0 34 40" aria-hidden="true"><path d="M4 38V18C4 9 10 3 17 3s13 6 13 15v20" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><circle cx="17" cy="23" r="5" fill="#FFB020"/></svg>
+      <span class="brand-text"><small>آژانس دیجیتال مارکتینگ</small><b>نوین</b></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="منوی اصلی">
+      <a href="index.html">خانه</a>
+      <a href="services.html">خدمات ما</a>
+      <a href="careers.html">استخدام</a>
+      <a href="employees.html" aria-current="page">کارمندان</a>
+    </nav>
+    <div class="bar-end">
+      <a class="btn btn-saf" href="index.html#contact">مشاوره رایگان</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="nav">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="top" aria-labelledby="page-title">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="مسیر صفحه"><a href="index.html">خانه</a><span aria-hidden="true">/</span><span>کارمندان</span></nav>
+      <span class="eyebrow">معرفی تیم نوین</span>
+      <h1 id="page-title">اعضای تیم نوین</h1>
+      <p class="hero-lead">با اعضای تیم، تحصیلات و زمینه‌های تخصصی آن‌ها آشنا شوید.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-label="معرفی اعضای تیم">
+    <div class="wrap">
+      <div class="profile-grid">
+        <figure class="portrait-card">
+          <img src="assets/reza-mohammadian-profile.jpg" alt="رضا محمدیان‌فرد، مدیر آژانس دیجیتال مارکتینگ نوین" width="640" height="640" fetchpriority="high">
+          <figcaption class="portrait-caption">
+            <strong>رضا محمدیان‌فرد</strong>
+            <span>مدیر آژانس دیجیتال مارکتینگ نوین</span>
+          </figcaption>
+        </figure>
+        <div>
+          <span class="section-kicker">درباره مدیر آژانس</span>
+          <h2 id="reza-profile-title">آشنایی با رضا محمدیان‌فرد</h2>
+          <p class="profile-intro">رضا محمدیان‌فرد در آژانس نوین در حوزهٔ سئو و تولید محتوا فعالیت می‌کند. در ادامه، اطلاعات تحصیلی و حرفه‌ای او را می‌بینید.</p>
+          <ul class="credentials" aria-label="اطلاعات حرفه‌ای رضا محمدیان‌فرد">
+            <li class="credential"><span>تحصیلات</span><strong>کارشناس ارشد مترجمی زبان انگلیسی</strong></li>
+            <li class="credential"><span>زبان‌ها</span><strong>انگلیسی، فارسی و روسی</strong></li>
+            <li class="credential"><span>تخصص</span><strong>سئو و تولید محتوا</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="profile-grid">
+        <figure class="portrait-card portrait-card-vertical">
+          <img src="assets/omid-reza-afifi.jpg" alt="امید رضا عفیفی" width="472" height="709" loading="lazy">
+          <figcaption class="portrait-caption">
+            <strong>امید رضا عفیفی</strong>
+            <span>متخصص طراحی وب‌سایت</span>
+          </figcaption>
+        </figure>
+        <div>
+          <span class="section-kicker">طراحی وب‌سایت</span>
+          <h2 id="omid-profile-title">آشنایی با امید رضا عفیفی</h2>
+          <p class="profile-intro">امید رضا عفیفی در زمینهٔ طراحی وب‌سایت فعالیت می‌کند. در ادامه، اطلاعات تحصیلی، زبان‌ها و تخصص او را می‌بینید.</p>
+          <ul class="credentials" aria-label="اطلاعات حرفه‌ای امید رضا عفیفی">
+            <li class="credential"><span>تحصیلات</span><strong>کارشناسی حقوق و کامپیوتر</strong></li>
+            <li class="credential"><span>زبان‌ها</span><strong>انگلیسی و آلمانی</strong></li>
+            <li class="credential"><span>تخصص</span><strong>طراحی وب‌سایت</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="contact-title">برای همکاری یا مشاوره در تماس باشید</h2>
+        <p>برای ارتباط مستقیم با آژانس نوین از راه‌های زیر استفاده کنید.</p>
+      </div>
+      <div class="contact-links">
+        <a class="btn btn-lapis" href="tel:+989217221785">تماس با <span class="ltr">۰۹۲۱ ۷۲۲ ۱۷۸۵</span></a>
+        <a class="btn btn-lite" href="mailto:dreza277@gmail.com">ارسال ایمیل</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>آژانس دیجیتال مارکتینگ نوین · شیراز</p>
+    <nav class="foot-links" aria-label="پیوندهای پایین صفحه">
+      <a href="index.html">خانه</a>
+      <a href="services.html">خدمات ما</a>
+      <a href="careers.html">استخدام</a>
+      <a href="#top">بازگشت به بالای صفحه</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var button = document.getElementById('menuBtn');
+    var nav = document.getElementById('nav');
+    if (!button || !nav) return;
+    button.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function (event) {
+      if (event.target.closest('a')) {
+        nav.classList.remove('open');
+        button.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>
+</body>
+</html>

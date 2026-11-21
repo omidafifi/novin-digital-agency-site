@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="با فرصت‌های همکاری در آژانس دیجیتال مارکتینگ نوین آشنا شوید و برای موقعیت‌های آینده رزومه آماده کنید.">
+  <meta name="theme-color" content="#2437E8">
+  <title>فرصت‌های همکاری | آژانس دیجیتال مارکتینگ نوین</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600;800;900&family=Unbounded:wght@600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #F3F5FC;
+      --fg: #0A0F33;
+      --muted: #4A5180;
+      --surface: #FFFFFF;
+      --surface-2: #E6EAFA;
+      --line: #D3D9F2;
+      --lapis: #2437E8;
+      --hero-bg: #2437E8;
+      --brand: #2437E8;
+      --saffron: #FFB020;
+      --turq: #17C3B2;
+      --ink: #0A0F33;
+      --band: #0A0F33;
+      --on-band: #EEF1FF;
+      --focus: #2437E8;
+      --font-display: "Noto Kufi Arabic", "Vazirmatn", Tahoma, sans-serif;
+      --font-body: "Vazirmatn", Tahoma, "Segoe UI", system-ui, sans-serif;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.95 var(--font-body);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #070B25;
+        --fg: #EEF1FF;
+        --muted: #A3AAD6;
+        --surface: #10164A;
+        --surface-2: #1A2270;
+        --line: #262F7C;
+        --hero-bg: #1C2CD4;
+        --brand: #8C99FF;
+        --band: #04061A;
+        --on-band: #EEF1FF;
+        --focus: #FFB020;
+      }
+    }
+    *, *::before, *::after { box-sizing: inherit; }
+    body { margin: 0; background: var(--bg); color: var(--fg); -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, p, ul { margin: 0; padding: 0; }
+    ul { list-style: none; }
+    a { color: inherit; text-decoration: none; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 8px; }
+    .wrap { width: 100%; max-width: 1220px; margin-inline: auto; padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px)); }
+    .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; font-variant-numeric: tabular-nums; }
+    .top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; background: var(--hero-bg); color: #fff; border-bottom: 1px solid rgba(255,255,255,.16); }
+    .bar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .brand-text small { font-size: .7rem; opacity: .8; font-weight: 500; }
+    .brand-text b { font: 900 1.6rem/1.1 var(--font-display); }
+    .nav { display: none; }
+    .nav.open { display: flex; flex-direction: column; gap: 2px; position: absolute; inset-inline: 0; top: 100%; background: var(--hero-bg); border-bottom: 1px solid rgba(255,255,255,.16); padding: 10px max(16px, env(safe-area-inset-right, 0px)) 18px max(16px, env(safe-area-inset-left, 0px)); }
+    .nav a { display: block; padding: 10px 8px; font-weight: 500; opacity: .88; }
+    .nav a:hover, .nav a[aria-current="page"] { opacity: 1; }
+    .nav a[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--saffron); }
+    .bar-end { display: flex; align-items: center; gap: 10px; }
+    .bar-end .btn { display: none; }
+    .btn { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 8px; padding: 8px 22px; border: 2px solid transparent; border-radius: 999px; cursor: pointer; font: 700 .95rem/1.5 var(--font-body); transition: transform .18s ease, background-color .18s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-saf { background: var(--saffron); color: var(--ink); }
+    .btn-lapis { background: var(--lapis); color: #fff; }
+    .btn-lite { border-color: rgba(255,255,255,.55); color: #fff; }
+    .btn-lite:hover { background: rgba(255,255,255,.12); }
+    .menu-btn { width: 44px; height: 44px; display: grid; place-items: center; border: 1.5px solid rgba(255,255,255,.5); border-radius: 50%; background: transparent; color: #fff; cursor: pointer; }
+    .hero { position: relative; isolation: isolate; overflow: clip; padding-block: clamp(56px, 9vw, 112px); background: var(--hero-bg); color: #fff; }
+    .hero-field { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .hero > .wrap { position: relative; z-index: 1; }
+    .hero::before, .hero::after { position: absolute; z-index: -1; content: ""; pointer-events: none; }
+    .hero::before { width: clamp(280px, 44vw, 580px); aspect-ratio: 1; inset-inline-start: -14%; top: -50%; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.035), 0 0 0 88px rgba(255,255,255,.035); }
+    .hero::after { width: 280px; height: 280px; inset-inline-end: 8%; bottom: -240px; border: 1px solid rgba(255,255,255,.2); transform: rotate(45deg); box-shadow: 0 0 0 30px rgba(255,255,255,.05), 0 0 0 60px rgba(255,255,255,.04); }
+    .crumbs { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; font-size: .9rem; opacity: .82; }
+    .crumbs a:hover { text-decoration: underline; }
+    .eyebrow { display: inline-block; padding: 3px 14px; border: 1px solid rgba(255,255,255,.45); border-radius: 999px; font-size: .9rem; }
+    h1 { max-width: 850px; margin-top: 18px; font: 900 clamp(2.2rem, 6.5vw, 5rem)/1.45 var(--font-display); text-wrap: balance; }
+    h1 span { color: var(--saffron); }
+    .hero-lead { max-width: 700px; margin-top: 18px; color: rgba(255,255,255,.88); font-size: clamp(1.02rem, 2vw, 1.18rem); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .section { padding-block: clamp(56px, 8vw, 96px); }
+    .section-head { max-width: 760px; margin-bottom: 28px; }
+    .kicker { display: block; margin-bottom: 8px; color: var(--brand); font-weight: 700; }
+    .kicker::before { display: inline-block; width: .9em; height: .9em; margin-inline-end: .5em; vertical-align: -.08em; background: currentColor; clip-path: polygon(50% 0,61% 27%,88% 12%,73% 39%,100% 50%,73% 61%,88% 88%,61% 73%,50% 100%,39% 73%,12% 88%,27% 61%,0 50%,27% 39%,12% 12%,39% 27%); content: ""; }
+    h2 { font: 800 clamp(1.7rem, 4vw, 2.75rem)/1.5 var(--font-display); text-wrap: balance; }
+    .section-lead { margin-top: 10px; color: var(--muted); }
+    .values { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .value-card { min-height: 220px; padding: clamp(22px, 3vw, 32px); border-radius: 26px; background: var(--surface); border: 1.5px solid var(--line); }
+    .value-card:nth-child(1) { background: var(--saffron); color: var(--ink); border-color: transparent; }
+    .value-card:nth-child(2) { background: var(--turq); color: var(--ink); border-color: transparent; }
+    .value-card:nth-child(3) { background: var(--band); color: var(--on-band); border-color: transparent; }
+    .value-icon { display: grid; width: 48px; height: 48px; margin-bottom: 20px; place-items: center; border-radius: 15px; background: rgba(10,15,51,.1); font: 800 1.25rem/1 var(--font-body); }
+    .value-card:nth-child(3) .value-icon { background: rgba(255,255,255,.12); }
+    .value-card h3, .job-card h3, .step h3 { font: 800 1.15rem/1.65 var(--font-display); }
+    .value-card p, .job-card p, .step p { margin-top: 8px; opacity: .82; }
+    .approach { display: grid; grid-template-columns: 1fr; gap: 14px; counter-reset: steps; }
+    .step { position: relative; padding: 24px; border: 1.5px solid var(--line); border-radius: 24px; background: var(--surface); counter-increment: steps; }
+    .step::before { display: grid; width: 38px; height: 38px; margin-bottom: 14px; place-items: center; border-radius: 50%; background: var(--surface-2); color: var(--brand); content: counter(steps); font-weight: 800; }
+    .jobs { background: var(--surface-2); }
+    .jobs-note { display: flex; align-items: flex-start; gap: 16px; padding: clamp(20px, 3.5vw, 32px); border: 1.5px solid var(--line); border-radius: 24px; background: var(--surface); }
+    .status { flex: none; width: 46px; height: 46px; display: grid; place-items: center; border-radius: 14px; background: var(--saffron); color: var(--ink); font-weight: 900; }
+    .jobs-note h3 { font: 800 1.15rem/1.7 var(--font-display); }
+    .jobs-note p { margin-top: 6px; color: var(--muted); }
+    .job-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 18px; }
+    .job-card { padding: 22px; border: 1.5px solid var(--line); border-radius: 22px; background: var(--bg); }
+    .job-card .tag { display: inline-block; margin-bottom: 12px; padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--brand); font-size: .82rem; font-weight: 700; }
+    .job-card p { color: var(--muted); opacity: 1; }
+    .contact { padding-block: clamp(44px, 7vw, 80px); background: var(--saffron); color: var(--ink); }
+    .contact-grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px; }
+    .contact h2 { font: 800 clamp(1.55rem, 3.6vw, 2.45rem)/1.55 var(--font-display); }
+    .contact p { margin-top: 8px; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .contact .btn { border-color: var(--ink); }
+    .contact .btn-lite { color: var(--ink); }
+    footer { padding-block: 34px; background: var(--band); color: var(--on-band); }
+    .foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; }
+    .foot p { opacity: .75; }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    .foot-links a { opacity: .8; }
+    .foot-links a:hover { opacity: 1; text-decoration: underline; }
+    @media (min-width: 640px) {
+      .bar-end .btn { display: inline-flex; }
+      .values, .job-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .approach { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1100px) {
+      .nav, .nav.open { display: flex; flex-direction: row; gap: 10px; position: static; border: 0; padding: 0; background: none; }
+      .menu-btn { display: none; }
+      .values { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+      .job-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      :root { scroll-behavior: auto; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="آژانس دیجیتال مارکتینگ نوین، صفحه اصلی">
+      <svg width="34" height="40" viewBox="0 0 34 40" aria-hidden="true"><path d="M4 38V18C4 9 10 3 17 3s13 6 13 15v20" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><circle cx="17" cy="23" r="5" fill="#FFB020"/></svg>
+      <span class="brand-text"><small>آژانس دیجیتال مارکتینگ</small><b>نوین</b></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="منوی اصلی">
+      <a href="index.html">خانه</a>
+      <a href="services.html">خدمات ما</a>
+      <a href="#jobs" aria-current="page">استخدام</a>
+      <a href="#culture">فرهنگ تیم</a>
+      <a href="#contact">تماس</a>
+      <a href="employees.html">کارمندان</a>
+    </nav>
+    <div class="bar-end">
+      <a class="btn btn-saf" href="index.html#contact">مشاوره رایگان</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="nav">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <canvas class="hero-field" id="field" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="مسیر صفحه"><a href="index.html">خانه</a><span aria-hidden="true">/</span><span>فرصت‌های همکاری</span></nav>
+      <span class="eyebrow">به تیم نوین بپیوندید</span>
+      <h1 id="hero-title">با هم، تجربه‌های <span>دیجیتال بهتری</span> می‌سازیم.</h1>
+      <p class="hero-lead">در نوین، طراحی سایت، سئو و بازاریابی دیجیتال با همکاری آدم‌هایی پیش می‌رود که از یادگیری، ایده‌پردازی و ساختن نتیجه‌های واقعی لذت می‌برند. با مسیر کاری ما آشنا شوید.</p>
+      <div class="hero-actions">
+        <a class="btn btn-saf" href="#jobs">دیدن حوزه‌های همکاری</a>
+        <a class="btn btn-lite" href="#culture">آشنایی با تیم</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="culture" aria-labelledby="culture-title">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="kicker">فرهنگ تیم</span>
+        <h2 id="culture-title">همکاری خوب، از گفت‌وگوی خوب شروع می‌شود.</h2>
+        <p class="section-lead">تیم کوچک و چابک نوین برای ارتباط روشن، مسئولیت‌پذیری و رشد مستمر ارزش قائل است. در هر پروژه، هدف مشترک و کیفیت کار را در مرکز توجه می‌گذاریم.</p>
+      </header>
+      <div class="values">
+        <article class="value-card">
+          <span class="value-icon" aria-hidden="true">۰۱</span>
+          <h3>یادگیری در مسیر کار</h3>
+          <p>با به‌اشتراک‌گذاشتن تجربه‌ها و بازخورد سازنده، از هر پروژه نکته‌ای تازه یاد می‌گیریم.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-icon" aria-hidden="true">۰۲</span>
+          <h3>تمرکز بر نتیجه</h3>
+          <p>کار خوب فقط انجام وظیفه نیست؛ مهم است بدانیم هر تصمیم چه ارزشی برای مشتری و تیم می‌سازد.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-icon" aria-hidden="true">۰۳</span>
+          <h3>ارتباط شفاف</h3>
+          <p>انتظارها، پیشرفت کار و چالش‌ها را صریح و محترمانه با هم در میان می‌گذاریم.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section jobs" id="jobs" aria-labelledby="jobs-title">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="kicker">حوزه‌های همکاری</span>
+        <h2 id="jobs-title">فرصت‌های شغلی در نوین</h2>
+        <p class="section-lead">این حوزه‌ها معرفی‌کنندهٔ زمینه‌های کاری تیم هستند، نه آگهی‌های استخدام فعال.</p>
+      </header>
+      <div class="jobs-note">
+        <span class="status" aria-hidden="true">!</span>
+        <div>
+          <h3>در حال حاضر موقعیت شغلی فعالی اعلام نشده است.</h3>
+          <p>اگر در یکی از حوزه‌های زیر تجربه دارید، صفحه را برای اطلاع از فرصت‌های آینده دنبال کنید. در صورت اعلام موقعیت جدید، جزئیات همین‌جا منتشر می‌شود.</p>
+        </div>
+      </div>
+      <div class="job-grid">
+        <article class="job-card">
+          <span class="tag">حوزهٔ همکاری</span>
+          <h3>طراحی و توسعهٔ وب</h3>
+          <p>طراحی رابط کاربری، پیاده‌سازی وب‌سایت‌های واکنش‌گرا و توجه به کیفیت فنی و تجربهٔ کاربر.</p>
+        </article>
+        <article class="job-card">
+          <span class="tag">حوزهٔ همکاری</span>
+          <h3>سئو و بازاریابی محتوا</h3>
+          <p>تحقیق کلمات کلیدی، تدوین محتوا و بهینه‌سازی مسیر دیده‌شدن کسب‌وکارها در جست‌وجو.</p>
+        </article>
+        <article class="job-card">
+          <span class="tag">حوزهٔ همکاری</span>
+          <h3>تبلیغات و بازاریابی دیجیتال</h3>
+          <p>برنامه‌ریزی کمپین، تحلیل عملکرد و کمک به رشد پایدار و قابل‌اندازه‌گیری پروژه‌ها.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="process-title">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="kicker">مسیر همکاری</span>
+        <h2 id="process-title">اگر موقعیتی باز شود، مسیر روشن است.</h2>
+      </header>
+      <ol class="approach">
+        <li class="step"><h3>معرفی تجربه</h3><p>رزومه، نمونه‌کار و حوزه‌ای را که در آن فعالیت می‌کنید آماده کنید.</p></li>
+        <li class="step"><h3>بررسی تناسب</h3><p>در صورت بازشدن موقعیت مرتبط، مهارت‌ها و نیازهای دو طرف بررسی می‌شود.</p></li>
+        <li class="step"><h3>گفت‌وگو و آشنایی</h3><p>دربارهٔ شیوهٔ همکاری، مسئولیت‌ها و انتظارات با هم صحبت می‌کنیم.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="contact-title">دربارهٔ یک فرصت همکاری سؤال دارید؟</h2>
+        <p>برای پیگیری موقعیت‌های فعال، با آژانس نوین در تماس باشید.</p>
+      </div>
+      <div class="contact-links">
+        <a class="btn btn-lapis" href="tel:+989217221785">تماس با <span class="ltr">۰۹۲۱ ۷۲۲ ۱۷۸۵</span></a>
+        <a class="btn btn-lite" href="mailto:dreza277@gmail.com">ارسال ایمیل</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>آژانس دیجیتال مارکتینگ نوین · شیراز</p>
+    <nav class="foot-links" aria-label="پیوندهای پایین صفحه">
+      <a href="index.html">خانه</a>
+      <a href="services.html">خدمات ما</a>
+      <a href="#top">بازگشت به بالای صفحه</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var button = document.getElementById('menuBtn');
+    var nav = document.getElementById('nav');
+    if (button && nav) {
+      button.addEventListener('click', function () {
+        var isOpen = nav.classList.toggle('open');
+        button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      nav.addEventListener('click', function (event) {
+        if (event.target.closest('a')) {
+          nav.classList.remove('open');
+          button.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  })();
+
+  (function () {
+    var canvas = document.getElementById('field');
+    var hero = document.getElementById('top');
+    if (!canvas || !canvas.getContext) return;
+
+    var context = canvas.getContext('2d');
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var width = 0, height = 0, cell = 48;
+    var mouseX = 0, mouseY = 0, lastMove = -9999, visible = true, hasPointer = false;
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function resize() {
+      var rect = hero.getBoundingClientRect();
+      width = rect.width;
+      height = rect.height;
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+      if (reduceMotion) draw(0);
+    }
+
+    function square(x, y, radius, angle) {
+      context.moveTo(x + Math.cos(angle) * radius, y + Math.sin(angle) * radius);
+      for (var corner = 1; corner < 4; corner++) {
+        var next = angle + corner * Math.PI / 2;
+        context.lineTo(x + Math.cos(next) * radius, y + Math.sin(next) * radius);
+      }
+      context.closePath();
+    }
+
+    function draw(time) {
+      context.clearRect(0, 0, width, height);
+      var pointerX, pointerY;
+      if (!hasPointer || time - lastMove > 3500) {
+        pointerX = width * (.5 + .38 * Math.sin(time / 2600));
+        pointerY = height * (.5 + .32 * Math.sin(time / 3300 + 1));
+      } else {
+        pointerX = mouseX;
+        pointerY = mouseY;
+      }
+
+      var columns = Math.ceil(width / cell) + 1;
+      var rows = Math.ceil(height / cell) + 1;
+      context.lineWidth = 1.3;
+      for (var column = 0; column < columns; column++) {
+        for (var row = 0; row < rows; row++) {
+          var x = column * cell, y = row * cell;
+          var dx = x - pointerX, dy = y - pointerY;
+          var influence = Math.exp(-(dx * dx + dy * dy) / (2 * 150 * 150));
+          var radius = cell * .2 + cell * .2 * influence;
+          var rotation = (reduceMotion ? 0 : time / 7000) + influence * Math.PI / 4;
+          context.strokeStyle = influence > .3
+            ? 'rgba(255,176,32,' + (.3 + influence * .7).toFixed(2) + ')'
+            : 'rgba(255,255,255,' + (.12 + influence * .5).toFixed(2) + ')';
+          context.beginPath();
+          square(x, y, radius, rotation + Math.PI / 4);
+          square(x, y, radius, rotation);
+          context.stroke();
+        }
+      }
+    }
+
+    hero.addEventListener('pointermove', function (event) {
+      var rect = hero.getBoundingClientRect();
+      mouseX = event.clientX - rect.left;
+      mouseY = event.clientY - rect.top;
+      hasPointer = true;
+      lastMove = performance.now();
+    });
+
+    function frame(time) {
+      if (visible) draw(time);
+      requestAnimationFrame(frame);
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+    if (window.IntersectionObserver) {
+      new IntersectionObserver(function (entries) {
+        visible = entries[0].isIntersecting;
+      }).observe(hero);
+    }
+    if (reduceMotion) draw(0);
+    else requestAnimationFrame(frame);
+  })();
+</script>
+</body>
+</html>
