@@ -2,6 +2,11 @@
 Options -Indexes
 ErrorDocument 404 /404.html
 
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType image/webp .webp
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
@@ -14,11 +19,31 @@ ErrorDocument 404 /404.html
   RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
   RewriteRule ^index\.html$ / [R=301,L]
 
-  # --- WordPress Migration 301 Redirects ---
-  # Add high-traffic legacy WordPress URLs below as needed:
-  # Redirect 301 /digital-marketing/ https://novindm.ir/services.html
-  # Redirect 301 /about-us/ https://novindm.ir/#about
-  # Redirect 301 /contact-us/ https://novindm.ir/#contact
+  # --- WordPress Migration 301 Redirects (from legacy novindm.ir wp-sitemap.xml) ---
+  RewriteRule ^wp-sitemap\.xml$ https://novindm.ir/sitemap.xml [R=301,L]
+
+  # Core agency pages & manager profile
+  RewriteRule ^به-وب-سایت-دیجیتال-مارکتینگ-نوین-خوش-آم/?$ https://novindm.ir/ [R=301,L]
+  RewriteRule ^چرا-انتخاب-آژانس-دیجیتال-مارکتینگ-محل/?$ https://novindm.ir/#about [R=301,L,NE]
+  RewriteRule ^درخواست-مشاوره/?$ https://novindm.ir/#contact [R=301,L,NE]
+  RewriteRule ^آدرس-دفتر-فیزیکی-آژانس-دیجیتال-مارکتی/?$ https://novindm.ir/#contact [R=301,L,NE]
+  RewriteRule ^(رضا-محمدیان-فرد|reza-mohammadian-fard)/?$ https://novindm.ir/employees.html [R=301,L]
+
+  # Digital marketing, SEO & Google Ads articles -> services.html
+  RewriteRule ^دیجیتال-مارکتینگ-بازاریابی-دیجیتال/?$ https://novindm.ir/services.html [R=301,L]
+  RewriteRule ^مزایای-استفاده-از-گوگل-ادز-برای-تبلیغ-س/?$ https://novindm.ir/services.html#methods [R=301,L,NE]
+  RewriteRule ^اهمیت-تولید-محتوای-سئو-شده-برای-بهبود-ج/?$ https://novindm.ir/services.html#methods [R=301,L,NE]
+  RewriteRule ^(how-to-use-google-ads|increase-site-visits|seo-for-e-commerce-websites|content-production)/?$ https://novindm.ir/services.html [R=301,L]
+
+  # Web design & support articles -> landing services section
+  RewriteRule ^پشتیبانی-سایت-چیست-و-چرا-اهمیت-دارد؟/?$ https://novindm.ir/#services [R=301,L,NE]
+  RewriteRule ^(website-design|wordpress-or-full-coding|low-cost-website-design|wordpress|joomla)/?$ https://novindm.ir/#services [R=301,L,NE]
+
+  # Careers & hiring articles -> careers.html
+  RewriteRule ^(hiring-a-website-supporter|website-job-market)/?$ https://novindm.ir/careers.html [R=301,L]
+
+  # Legacy WordPress service categories -> services.html
+  RewriteRule ^category/(طراحی-سایت|گوگل-ادز|سئو|پشتیبانی-سایت|تولید-محتوا)/?$ https://novindm.ir/services.html [R=301,L]
 </IfModule>
 
 <IfModule mod_deflate.c>
@@ -28,6 +53,7 @@ ErrorDocument 404 /404.html
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
