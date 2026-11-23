@@ -103,6 +103,7 @@
     .profile-grid + .profile-grid { margin-top: clamp(52px, 8vw, 88px); padding-top: clamp(52px, 8vw, 88px); border-top: 1px solid var(--line); }
     .portrait-card { position: relative; overflow: hidden; max-width: 480px; margin: 0 auto; border: 1px solid var(--line); border-radius: 30px; background: var(--surface); box-shadow: 0 18px 48px rgba(10,15,51,.12); }
     .portrait-card img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+    .portrait-card-portrait img { aspect-ratio: 3 / 4; object-position: center top; }
     .portrait-card-vertical img { aspect-ratio: 2 / 3; object-position: center top; }
     .portrait-caption { padding: 18px 22px 22px; }
     .portrait-caption strong { display: block; font: 800 1.15rem/1.7 var(--font-display); }
@@ -174,8 +175,8 @@
   <section class="section" aria-label="معرفی اعضای تیم">
     <div class="wrap">
       <div class="profile-grid">
-        <figure class="portrait-card">
-          <img src="assets/reza-mohammadian-profile.jpg" alt="رضا محمدیان‌فرد، مدیر آژانس دیجیتال مارکتینگ نوین" width="640" height="640" fetchpriority="high">
+        <figure class="portrait-card portrait-card-portrait">
+          <img src="assets/reza-mohammadian-profile.jpg" alt="رضا محمدیان‌فرد، مدیر آژانس دیجیتال مارکتینگ نوین" width="764" height="1024" fetchpriority="high">
           <figcaption class="portrait-caption">
             <strong>رضا محمدیان‌فرد</strong>
             <span>مدیر آژانس دیجیتال مارکتینگ نوین</span>
@@ -187,7 +188,7 @@
           <p class="profile-intro">رضا محمدیان‌فرد در آژانس نوین در حوزهٔ سئو و تولید محتوا فعالیت می‌کند. در ادامه، اطلاعات تحصیلی و حرفه‌ای او را می‌بینید.</p>
           <ul class="credentials" aria-label="اطلاعات حرفه‌ای رضا محمدیان‌فرد">
             <li class="credential"><span>تحصیلات</span><strong>کارشناس ارشد مترجمی زبان انگلیسی</strong></li>
-            <li class="credential"><span>زبان‌ها</span><strong>انگلیسی، فارسی و روسی</strong></li>
+            <li class="credential"><span>زبان‌ها</span><strong>انگلیسی و روسی</strong></li>
             <li class="credential"><span>تخصص</span><strong>سئو و تولید محتوا</strong></li>
           </ul>
         </div>
