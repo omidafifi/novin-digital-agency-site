@@ -194,8 +194,12 @@ h1 .ln:nth-child(3) { animation-delay: .24s; }
 /* Contact */
 .contact { background: var(--saffron); color: var(--ink); }
 .contact h2 { font: 900 clamp(1.8rem, 4.6vw, 3rem)/1.4 var(--font-display); text-wrap: balance; }
-.bigphone { display: inline-block; margin-top: 10px; font: 900 clamp(1.6rem, 4.6vw, 2.9rem)/1.4 var(--font-display); border-bottom: 3px solid var(--ink); }
+.bigphones { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 26px; margin-top: 14px; }
+.bigphone { display: inline-block; font: 900 clamp(1.6rem, 4.6vw, 2.9rem)/1.4 var(--font-display); border-bottom: 3px solid var(--ink); }
+.bigphone-sub { font-size: clamp(1.2rem, 2.8vw, 1.75rem); border-bottom-width: 2px; }
 .bigphone:hover { background: var(--ink); color: var(--saffron); }
+.phone-list { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.phone-list a:hover { text-decoration: underline; }
 .c-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
 .c-ways { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 30px; }
 @media (min-width: 800px) { .c-ways { grid-template-columns: 1fr 1fr 1.3fr; } }
@@ -597,15 +601,19 @@ footer li a:hover { opacity: 1; text-decoration: underline; }
     <span class="kick">کلام آخر</span>
     <h2 class="long" id="contact-title">اگر به دنبال افزایش فروش، بهبود برند و تعامل بهتر با مشتریان هستید، دیجیتال مارکتینگ بهترین راهکار است!</h2>
     <p class="ask">آیا شما هم از دیجیتال مارکتینگ استفاده می‌کنید؟ چه استراتژی‌هایی برای شما مؤثر بوده‌اند؟ نظرات خود را با ما به اشتراک بگذارید.</p>
-    <a class="bigphone" href="tel:+989217221785" aria-label="تماس با ۰۹۲۱۷۲۲۱۷۸۵"><span class="ltr" id="phoneTxt">۰۹۲۱ ۷۲۲ ۱۷۸۵</span></a>
+    <div class="bigphones">
+      <a class="bigphone" href="tel:+989217221785" aria-label="تماس با ۰۹۲۱۷۲۲۱۷۸۵"><span class="ltr" id="phoneTxt">۰۹۲۱ ۷۲۲ ۱۷۸۵</span></a>
+      <a class="bigphone bigphone-sub" href="tel:+989981496288" aria-label="تماس با ۰۹۹۸۱۴۹۶۲۸۸"><span class="ltr">۰۹۹۸ ۱۴۹ ۶۲۸۸</span></a>
+      <a class="bigphone bigphone-sub" href="tel:+989178353943" aria-label="تماس با ۰۹۱۷۸۳۵۳۹۴۳"><span class="ltr">۰۹۱۷ ۸۳۵ ۳۹۴۳</span></a>
+    </div>
     <div class="c-row">
       <button class="btn btn-ink" type="button" data-copy="09217221785" data-target="phoneTxt">کپی شماره</button>
       <button class="btn btn-inkline" type="button" data-copy="dreza277@gmail.com" data-target="mailTxt">کپی ایمیل</button>
     </div>
     <div class="c-ways">
-      <div><small>شماره تماس</small><span class="val ltr">09217221785</span></div>
+      <div><small>شماره‌های تماس</small><div class="phone-list"><a class="val ltr" href="tel:+989217221785">09217221785</a><a class="val ltr" href="tel:+989981496288">09981496288</a><a class="val ltr" href="tel:+989178353943">09178353943</a></div></div>
       <div><small>ایمیل</small><span class="val ltr" id="mailTxt">dreza277@gmail.com</span></div>
-      <div><small>نشانی</small><address class="val">فارس، شیراز، بلوار جمهوری، مدیریت دانشگاه شیراز، بلوک B، طبقه ۸</address></div>
+      <div><small>نشانی</small><address class="val">فارس، شیراز، بلوار سلمان فارسی، کوچه ۲ شهیدان جوانمردی [۶ جهانگردی]، خیابان جهانگردی، پارسیان بلوک ۱، واحد ۲۳</address></div>
     </div>
   </div>
 </section>
@@ -624,7 +632,7 @@ footer li a:hover { opacity: 1; text-decoration: underline; }
           <li>شرایط و ضوابط</li>
         </ul>
       </div>
-      <div><h3>آدرس و شماره تماس</h3><p><span class="ltr">09217221785</span></p><p><span class="ltr">dreza277@gmail.com</span></p><p>فارس، شیراز، بلوار جمهوری، مدیریت دانشگاه شیراز، بلوک B، طبقه ۸</p></div>
+      <div><h3>آدرس و شماره تماس</h3><p class="phone-list"><a class="ltr" href="tel:+989217221785">09217221785</a><a class="ltr" href="tel:+989981496288">09981496288</a><a class="ltr" href="tel:+989178353943">09178353943</a></p><p><a class="ltr" href="mailto:dreza277@gmail.com">dreza277@gmail.com</a></p><p>فارس، شیراز، بلوار سلمان فارسی، کوچه ۲ شهیدان جوانمردی [۶ جهانگردی]، خیابان جهانگردی، پارسیان بلوک ۱، واحد ۲۳</p></div>
     </div>
     <section class="footer-social" aria-labelledby="footer-social-title">
       <div class="footer-social-copy">
