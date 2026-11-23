@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/
+    - /bin/mkdir -p $DEPLOYPATH/assets/fonts
+    - /bin/cp -f index.html $DEPLOYPATH
+    - /bin/cp -f services.html $DEPLOYPATH
+    - /bin/cp -f careers.html $DEPLOYPATH
+    - /bin/cp -f employees.html $DEPLOYPATH
+    - /bin/cp -f 404.html $DEPLOYPATH
+    - /bin/cp -f robots.txt $DEPLOYPATH
+    - /bin/cp -f sitemap.xml $DEPLOYPATH
+    - /bin/cp -f .htaccess $DEPLOYPATH
+    - /bin/cp -Rf assets/. $DEPLOYPATH/assets/
